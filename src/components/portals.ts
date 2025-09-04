@@ -66,7 +66,7 @@ export const Confirm = Portal<ConfirmProps>(
         in: true,
         children: Box({
           borderRadius: 10,
-          backgroundColor: 'theme.background.paper',
+          backgroundColor: 'theme.base',
           padding: '10px 20px',
           boxShadow: 'theme.shadow.sm',
           children: Column({
@@ -149,7 +149,7 @@ export const Menu = Portal<Partial<Omit<PopoverProps, keyof CSSProperties | 'chi
       paper: {
         sx: {
           padding: '8px 0',
-          backgroundColor: 'theme.background.paper',
+          backgroundColor: 'theme.base',
         },
       },
     },

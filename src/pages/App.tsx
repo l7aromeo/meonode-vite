@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { Component, Column, Row, Center, H1, H2, H3, Text, Button, Div, Section, A } from '@meonode/ui'
+import { Component, Column, Row, Center, H1, H2, H3, Text, Button, Div, Section, A, Node } from '@meonode/ui'
 import { useTheme } from '@src/hooks/useTheme.ts'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { gruvboxLight } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
 // Features data
 const features = [
@@ -139,10 +141,15 @@ const CodeBlock = Component<{ title: string; code: string; language: string }>((
             marginBottom: 'theme.spacing.md',
           }),
 
-          Text(code, {
-            whiteSpace: 'pre-line',
-            lineHeight: 1.5,
-            textAlign: 'left',
+          Node(SyntaxHighlighter, {
+            borderRadius: 8,
+            textAlign: 'initial',
+            props: {
+              style: gruvboxLight,
+            },
+            color: 'initial',
+            language: 'javascript',
+            children: code,
           }),
         ],
       }),
@@ -175,7 +182,7 @@ const InstallCommand = Component(() =>
 )
 
 // Main homepage component
-const AppPage = Component(() => {
+const AppPage = () => {
   const theme = useTheme()
   const [showCodeComparison, setShowCodeComparison] = useState(false)
 
@@ -616,7 +623,7 @@ const AppPage = Component(() => {
         }),
       }),
     ],
-  })
-})
+  }).render()
+}
 
 export default AppPage

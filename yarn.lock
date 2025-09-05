@@ -563,7 +563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.7.0":
+"@eslint-community/eslint-utils@npm:^4.7.0":
   version: 4.7.0
   resolution: "@eslint-community/eslint-utils@npm:4.7.0"
   dependencies:
@@ -571,6 +571,17 @@ __metadata:
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
   checksum: 10c0/c0f4f2bd73b7b7a9de74b716a664873d08ab71ab439e51befe77d61915af41a81ecec93b408778b3a7856185244c34c2c8ee28912072ec14def84ba2dec70adf
+  languageName: node
+  linkType: hard
+
+"@eslint-community/eslint-utils@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "@eslint-community/eslint-utils@npm:4.8.0"
+  dependencies:
+    eslint-visitor-keys: "npm:^3.4.3"
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+  checksum: 10c0/33b93d2a4e9d5fe4c11d02d0fc5ed69e12fcb1e7ca031ded0d6adb24e768c36df77288ed79eecc784f9db34219816247db27688dfe869fb7fbf096840a097d7a
   languageName: node
   linkType: hard
 
@@ -625,10 +636,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.34.0, @eslint/js@npm:^9.34.0":
-  version: 9.34.0
-  resolution: "@eslint/js@npm:9.34.0"
-  checksum: 10c0/53f1bfd2a374683d9382a6850354555f6e89a88416c34a5d34e9fbbaf717e97c2b06300e8f93e5eddba8bda8951ccab7f93a680e56ded1a3d21d526019e69bab
+"@eslint/js@npm:9.35.0, @eslint/js@npm:^9.35.0":
+  version: 9.35.0
+  resolution: "@eslint/js@npm:9.35.0"
+  checksum: 10c0/d40fe38724bc76c085c0b753cdf937fa35c0d6807ae76b2632e3f5f66c3040c91adcf1aff2ce70b4f45752e60629fadc415eeec9af3be3c274bae1cac54b9840
   languageName: node
   linkType: hard
 
@@ -968,9 +979,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.0.59":
-  version: 1.0.59
-  resolution: "@meonode/mui@npm:1.0.59"
+"@meonode/mui@npm:^1.0.60":
+  version: 1.0.60
+  resolution: "@meonode/mui@npm:1.0.60"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
@@ -989,20 +1000,20 @@ __metadata:
     "@mui/x-tree-view": ^8.11.1
     "@mui/x-tree-view-pro": ^8.11.1
     react: ">=18.3.1"
-  checksum: 10c0/641e94b2c758086b0818c6b678540281cc5e01768c63129e5899802c9d092f7017d004b9782cdd5d1e104b23e56409a093fa48aaf1700a10b12c590e202a2e43
+  checksum: 10c0/f01d722f528605c8c9a350d4071f474be6d68b2855acf853b9e381c16546e7562a15fad6d7060934075c450cffa4714c0fe7e8f58503419901f6b125c3cad52c
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.2.8":
-  version: 0.2.8
-  resolution: "@meonode/ui@npm:0.2.8"
+"@meonode/ui@npm:^0.2.9":
+  version: 0.2.9
+  resolution: "@meonode/ui@npm:0.2.9"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=18.3.1"
     react-dom: ">=18.3.1"
-  checksum: 10c0/a6289d26dac308499cee2333995ac2b6b3c9df66742cf2279d5dc061ba8e531a9b58de43a001fc31592c2c5dbceeeb4b30486c9cea05f89471fb07a3d19bb63a
+  checksum: 10c0/1b5834cfd06b9853d89563333003f05e8f3ad521c378f8fb48d5809640eac842827e186152c9d39e2119e4c2057b128659c94f6343f0e5d2e2ea7312e0cda7bb
   languageName: node
   linkType: hard
 
@@ -2864,17 +2875,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.34.0":
-  version: 9.34.0
-  resolution: "eslint@npm:9.34.0"
+"eslint@npm:^9.35.0":
+  version: 9.35.0
+  resolution: "eslint@npm:9.35.0"
   dependencies:
-    "@eslint-community/eslint-utils": "npm:^4.2.0"
+    "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
     "@eslint/config-array": "npm:^0.21.0"
     "@eslint/config-helpers": "npm:^0.3.1"
     "@eslint/core": "npm:^0.15.2"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.34.0"
+    "@eslint/js": "npm:9.35.0"
     "@eslint/plugin-kit": "npm:^0.3.5"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
@@ -2910,7 +2921,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/ba3e54fa0c8ed23d062f91519afaae77fed922a6c4d76130b6cd32154bcb406aaea4b3c5ed88e0be40828c1d5b6921592f3947dbdc5e2043de6bd7aa341fe5ea
+  checksum: 10c0/798c527520ccf62106f8cd210bd1db1f8eb1b0e7a56feb0a8b322bf3a1e6a0bc6dc3a414542c22b1b393d58d5e3cd0252c44c023049de9067b836450503a2f03
   languageName: node
   linkType: hard
 
@@ -3923,9 +3934,9 @@ __metadata:
   resolution: "meonode-vite@workspace:."
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
-    "@eslint/js": "npm:^9.34.0"
-    "@meonode/mui": "npm:^1.0.59"
-    "@meonode/ui": "npm:^0.2.8"
+    "@eslint/js": "npm:^9.35.0"
+    "@meonode/mui": "npm:^1.0.60"
+    "@meonode/ui": "npm:^0.2.9"
     "@mui/icons-material": "npm:^7.3.2"
     "@mui/material": "npm:^7.3.2"
     "@mui/types": "npm:^7.4.6"
@@ -3938,7 +3949,7 @@ __metadata:
     "@types/tinycolor2": "npm:^1.4.6"
     "@vitejs/plugin-react": "npm:^5.0.2"
     "@vitejs/plugin-react-swc": "npm:^4.0.1"
-    eslint: "npm:^9.34.0"
+    eslint: "npm:^9.35.0"
     eslint-plugin-prettier: "npm:^5.5.4"
     eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-react-refresh: "npm:^0.4.20"

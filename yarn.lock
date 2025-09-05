@@ -968,41 +968,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.0.58":
-  version: 1.0.58
-  resolution: "@meonode/mui@npm:1.0.58"
+"@meonode/mui@npm:^1.0.59":
+  version: 1.0.59
+  resolution: "@meonode/mui@npm:1.0.59"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
-    "@meonode/ui": ^0.2.7
+    "@meonode/ui": ^0.2.8
     "@mui/lab": ^7.0.0-beta.17
     "@mui/material": ^7.3.2
     "@mui/system": ^7.3.2
     "@mui/types": ^7.4.6
-    "@mui/x-charts": ^8.11.0
-    "@mui/x-charts-pro": ^8.11.0
-    "@mui/x-data-grid": ^8.11.0
-    "@mui/x-data-grid-premium": ^8.11.0
-    "@mui/x-data-grid-pro": ^8.11.0
-    "@mui/x-date-pickers": ^8.11.0
-    "@mui/x-date-pickers-pro": ^8.11.0
-    "@mui/x-tree-view": ^8.11.0
-    "@mui/x-tree-view-pro": ^8.11.0
+    "@mui/x-charts": ^8.11.1
+    "@mui/x-charts-pro": ^8.11.1
+    "@mui/x-data-grid": ^8.11.1
+    "@mui/x-data-grid-premium": ^8.11.1
+    "@mui/x-data-grid-pro": ^8.11.1
+    "@mui/x-date-pickers": ^8.11.1
+    "@mui/x-date-pickers-pro": ^8.11.1
+    "@mui/x-tree-view": ^8.11.1
+    "@mui/x-tree-view-pro": ^8.11.1
     react: ">=18.3.1"
-  checksum: 10c0/1a4167756517ad643bc8cc99c790db1fc3dd16a461a2e976b382fcf79dfe8baea622c0f26b0f18bd76c12a4ad061e9d83dcdc395a914e9fcbe02d99e48f3d15f
+  checksum: 10c0/641e94b2c758086b0818c6b678540281cc5e01768c63129e5899802c9d092f7017d004b9782cdd5d1e104b23e56409a093fa48aaf1700a10b12c590e202a2e43
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "@meonode/ui@npm:0.2.7"
+"@meonode/ui@npm:^0.2.8":
+  version: 0.2.8
+  resolution: "@meonode/ui@npm:0.2.8"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=18.3.1"
     react-dom: ">=18.3.1"
-  checksum: 10c0/7286760e96736dae3bcb21e0c39174392a5b88e09862a5804f605a03794ccc5895ed56637cc5a3821506429ef44bf13841c5d388bdbd3c8510c9046db3144899
+  checksum: 10c0/a6289d26dac308499cee2333995ac2b6b3c9df66742cf2279d5dc061ba8e531a9b58de43a001fc31592c2c5dbceeeb4b30486c9cea05f89471fb07a3d19bb63a
   languageName: node
   linkType: hard
 
@@ -1660,12 +1660,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.18.0":
-  version: 22.18.0
-  resolution: "@types/node@npm:22.18.0"
+"@types/node@npm:^22.18.1":
+  version: 22.18.1
+  resolution: "@types/node@npm:22.18.1"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/02cce4493eee8408e66e76fcad164f33c0600ed0854ad08e5519a76a06402da5b589b278cf71bc975c9e014f2668bdf758bc3be7fed63bdbfd0900495372797c
+  checksum: 10c0/1912b0ea6cb9ef59722b0fed64652388e13b41d52569c16198f1278a882837bbf4c8a4ec913e852893356f07c0c44b4e00fbca289ac7222741d03449104e22fe
   languageName: node
   linkType: hard
 
@@ -1692,7 +1692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-syntax-highlighter@npm:^15":
+"@types/react-syntax-highlighter@npm:^15.5.13":
   version: 15.5.13
   resolution: "@types/react-syntax-highlighter@npm:15.5.13"
   dependencies:
@@ -3924,17 +3924,17 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.34.0"
-    "@meonode/mui": "npm:^1.0.58"
-    "@meonode/ui": "npm:^0.2.7"
+    "@meonode/mui": "npm:^1.0.59"
+    "@meonode/ui": "npm:^0.2.8"
     "@mui/icons-material": "npm:^7.3.2"
     "@mui/material": "npm:^7.3.2"
     "@mui/types": "npm:^7.4.6"
     "@reduxjs/toolkit": "npm:^2.9.0"
     "@types/lodash": "npm:^4.17.20"
-    "@types/node": "npm:^22.18.0"
+    "@types/node": "npm:^22.18.1"
     "@types/react": "npm:^19.1.12"
     "@types/react-dom": "npm:^19.1.9"
-    "@types/react-syntax-highlighter": "npm:^15"
+    "@types/react-syntax-highlighter": "npm:^15.5.13"
     "@types/tinycolor2": "npm:^1.4.6"
     "@vitejs/plugin-react": "npm:^5.0.2"
     "@vitejs/plugin-react-swc": "npm:^4.0.1"

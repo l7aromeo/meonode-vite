@@ -979,13 +979,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.0.64":
-  version: 1.0.64
-  resolution: "@meonode/mui@npm:1.0.64"
+"@meonode/mui@npm:^1.0.65":
+  version: 1.0.65
+  resolution: "@meonode/mui@npm:1.0.65"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
-    "@meonode/ui": ^0.2.14
+    "@meonode/ui": ^0.2.15
     "@mui/lab": ^7.0.0-beta.17
     "@mui/material": ^7.3.2
     "@mui/system": ^7.3.2
@@ -1000,20 +1000,20 @@ __metadata:
     "@mui/x-tree-view": ^8.11.2
     "@mui/x-tree-view-pro": ^8.11.2
     react: ">=18.3.1"
-  checksum: 10c0/90dd6cab3b4a88f0439bfb23351c97614322252e222ed6e76d5aa364bace458ed8f76598e3c8fd29da539c4e7020ec2554ab2ee10f7d144647a46f227f1c1683
+  checksum: 10c0/542e485c6301216b636e817c370af95fabd3bdbd3ccaa73848c1a1cca408d631c7dcec61070f51835d97e825f0370b469533c0f5262b6bb7a027523bad48438e
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.2.14":
-  version: 0.2.14
-  resolution: "@meonode/ui@npm:0.2.14"
+"@meonode/ui@npm:^0.2.15":
+  version: 0.2.15
+  resolution: "@meonode/ui@npm:0.2.15"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=18.3.1"
     react-dom: ">=18.3.1"
-  checksum: 10c0/6fadf08ce204ad1d8f5fd4c94c961d0d17c3bfa2b937f75eb76c98a38cdeb24feb5774abb5f3901ad9c3863440b4a64805cbf053e575a9060fdd18f8de56524a
+  checksum: 10c0/ce539e704f13359efbe60527f75ac3aa07d6e34224781a58069c9c7c2fa9d0f825e92ea27d3b0daad794a10e50b855ef759bd4e7f9cb927db25a26d003b754ee
   languageName: node
   linkType: hard
 
@@ -3935,8 +3935,8 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.35.0"
-    "@meonode/mui": "npm:^1.0.64"
-    "@meonode/ui": "npm:^0.2.14"
+    "@meonode/mui": "npm:^1.0.65"
+    "@meonode/ui": "npm:^0.2.15"
     "@mui/icons-material": "npm:^7.3.2"
     "@mui/material": "npm:^7.3.2"
     "@mui/types": "npm:^7.4.6"
@@ -3960,7 +3960,7 @@ __metadata:
     react: "npm:^19.1.1"
     react-dom: "npm:^19.1.1"
     react-redux: "npm:^9.2.0"
-    react-router: "npm:^7.8.2"
+    react-router: "npm:^7.9.0"
     react-syntax-highlighter: "npm:^15.6.6"
     rollup-plugin-visualizer: "npm:^6.0.3"
     sharp: "npm:^0.34.3"
@@ -4584,9 +4584,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router@npm:^7.8.2":
-  version: 7.8.2
-  resolution: "react-router@npm:7.8.2"
+"react-router@npm:^7.9.0":
+  version: 7.9.0
+  resolution: "react-router@npm:7.9.0"
   dependencies:
     cookie: "npm:^1.0.1"
     set-cookie-parser: "npm:^2.6.0"
@@ -4596,7 +4596,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/e3122c2949bcad5e9c990cfb88e9cbd139e5a2a5c1d29664732623907a488634c0ddbf673d07af8f113d418f66270c174f014de8b885996722f431d09f5734be
+  checksum: 10c0/71a14785b0b8d156d11cd08e0efbbd149a281bcd50e88d865a2c536c8252aa47ab8d295280edb1faaf7362df589aa535681003aa7a3998271784a69e21a250ea
   languageName: node
   linkType: hard
 

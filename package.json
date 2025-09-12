@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.14.1",
-    "@meonode/mui": "^1.0.64",
-    "@meonode/ui": "^0.2.14",
+    "@meonode/mui": "^1.0.65",
+    "@meonode/ui": "^0.2.15",
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
     "@reduxjs/toolkit": "^2.9.0",
@@ -20,7 +20,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-redux": "^9.2.0",
-    "react-router": "^7.8.2",
+    "react-router": "^7.9.0",
     "react-syntax-highlighter": "^15.6.6"
   },
   "devDependencies": {

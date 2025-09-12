@@ -979,41 +979,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.0.61":
-  version: 1.0.61
-  resolution: "@meonode/mui@npm:1.0.61"
+"@meonode/mui@npm:^1.0.63":
+  version: 1.0.63
+  resolution: "@meonode/mui@npm:1.0.63"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
-    "@meonode/ui": ^0.2.10
+    "@meonode/ui": ^0.2.12
     "@mui/lab": ^7.0.0-beta.17
     "@mui/material": ^7.3.2
     "@mui/system": ^7.3.2
     "@mui/types": ^7.4.6
-    "@mui/x-charts": ^8.11.1
-    "@mui/x-charts-pro": ^8.11.1
-    "@mui/x-data-grid": ^8.11.1
-    "@mui/x-data-grid-premium": ^8.11.1
-    "@mui/x-data-grid-pro": ^8.11.1
-    "@mui/x-date-pickers": ^8.11.1
-    "@mui/x-date-pickers-pro": ^8.11.1
-    "@mui/x-tree-view": ^8.11.1
-    "@mui/x-tree-view-pro": ^8.11.1
+    "@mui/x-charts": ^8.11.2
+    "@mui/x-charts-pro": ^8.11.2
+    "@mui/x-data-grid": ^8.11.2
+    "@mui/x-data-grid-premium": ^8.11.2
+    "@mui/x-data-grid-pro": ^8.11.2
+    "@mui/x-date-pickers": ^8.11.2
+    "@mui/x-date-pickers-pro": ^8.11.2
+    "@mui/x-tree-view": ^8.11.2
+    "@mui/x-tree-view-pro": ^8.11.2
     react: ">=18.3.1"
-  checksum: 10c0/0f62d4a26d2d237e45593668a72ee59190f743fd80aaf3e618ed7caf6e918937ac885b4b1549fed18f479787cdc26d3dc41c377fcbbc74cb5ba873fae544c087
+  checksum: 10c0/421d8bae6ff7a807219befb496259331454b7549bb8e91a087cff058c7857f207e67bb1226a85491f6b36a632fe400047ebce44ccea37c57afbc94600cd3ba09
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.2.10":
-  version: 0.2.10
-  resolution: "@meonode/ui@npm:0.2.10"
+"@meonode/ui@npm:^0.2.13":
+  version: 0.2.13
+  resolution: "@meonode/ui@npm:0.2.13"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=18.3.1"
     react-dom: ">=18.3.1"
-  checksum: 10c0/d05b5b21d4897d4f2c1c08c964c575c519c9943e8ee1c1e8efa508daa874c44ba283d47d053b93d8ceef61f08ce58b32a6bce9c3ba79d4b6fb768ef3576cb6ef
+  checksum: 10c0/6bab72a5e31633d0a4516fa061bf1acc3ae6032a7740ab2b141d92af2ce71219c34a5644760e4fa973eef76ee3e44c52bb17fb3795e041ab237f379c124cfcba
   languageName: node
   linkType: hard
 
@@ -3935,8 +3935,8 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.35.0"
-    "@meonode/mui": "npm:^1.0.61"
-    "@meonode/ui": "npm:^0.2.10"
+    "@meonode/mui": "npm:^1.0.63"
+    "@meonode/ui": "npm:^0.2.13"
     "@mui/icons-material": "npm:^7.3.2"
     "@mui/material": "npm:^7.3.2"
     "@mui/types": "npm:^7.4.6"

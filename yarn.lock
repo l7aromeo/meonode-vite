@@ -979,13 +979,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.0.65":
-  version: 1.0.65
-  resolution: "@meonode/mui@npm:1.0.65"
+"@meonode/mui@npm:^1.0.66":
+  version: 1.0.66
+  resolution: "@meonode/mui@npm:1.0.66"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
-    "@meonode/ui": ^0.2.15
+    "@meonode/ui": ^0.2.16
     "@mui/lab": ^7.0.0-beta.17
     "@mui/material": ^7.3.2
     "@mui/system": ^7.3.2
@@ -1000,20 +1000,20 @@ __metadata:
     "@mui/x-tree-view": ^8.11.2
     "@mui/x-tree-view-pro": ^8.11.2
     react: ">=18.3.1"
-  checksum: 10c0/542e485c6301216b636e817c370af95fabd3bdbd3ccaa73848c1a1cca408d631c7dcec61070f51835d97e825f0370b469533c0f5262b6bb7a027523bad48438e
+  checksum: 10c0/5f882522c000e2f91bb6d5deb43fd0e269a6e14cb6b920d6f8d60bdd2ce7126ebb50c460625de8e054ddbd67230684d586f6e1d04fcc59c1b5fe5c42f28e1946
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.2.15":
-  version: 0.2.15
-  resolution: "@meonode/ui@npm:0.2.15"
+"@meonode/ui@npm:^0.2.16":
+  version: 0.2.16
+  resolution: "@meonode/ui@npm:0.2.16"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=18.3.1"
     react-dom: ">=18.3.1"
-  checksum: 10c0/ce539e704f13359efbe60527f75ac3aa07d6e34224781a58069c9c7c2fa9d0f825e92ea27d3b0daad794a10e50b855ef759bd4e7f9cb927db25a26d003b754ee
+  checksum: 10c0/1d189699c9a2d40555edf97f7024c7ced2c944ff0ce6895c432e57c18d73413a5dc04b14122abf92d86da20dfc59723ce5fe59274d8a58b39fd497409cab0593
   languageName: node
   linkType: hard
 
@@ -1671,12 +1671,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.18.1":
-  version: 22.18.1
-  resolution: "@types/node@npm:22.18.1"
+"@types/node@npm:^22.18.3":
+  version: 22.18.3
+  resolution: "@types/node@npm:22.18.3"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/1912b0ea6cb9ef59722b0fed64652388e13b41d52569c16198f1278a882837bbf4c8a4ec913e852893356f07c0c44b4e00fbca289ac7222741d03449104e22fe
+  checksum: 10c0/29ec5674a7eaac50c4c779e937c4449e813ff70c411eb525b6e12837e7b88c39219c3c2f29e39ea8f72cd6b7975f8696dc05f78c07bce35a241e0c9eaf5523a8
   languageName: node
   linkType: hard
 
@@ -1721,12 +1721,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^19.1.12":
+"@types/react@npm:*":
   version: 19.1.12
   resolution: "@types/react@npm:19.1.12"
   dependencies:
     csstype: "npm:^3.0.2"
   checksum: 10c0/e35912b43da0caaab5252444bab87a31ca22950cde2822b3b3dc32e39c2d42dad1a4cf7b5dde9783aa2d007f0b2cba6ab9563fc6d2dbcaaa833b35178118767c
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^19.1.13":
+  version: 19.1.13
+  resolution: "@types/react@npm:19.1.13"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/75e35b54883f5ed07d3b5cb16a4711b6dbb7ec6b74301bcb9bfa697c9d9fff022ec508e1719e7b2c69e2e8b042faac1125be7717b5e5e084f816a2c88e136920
   languageName: node
   linkType: hard
 
@@ -3935,15 +3944,15 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.35.0"
-    "@meonode/mui": "npm:^1.0.65"
-    "@meonode/ui": "npm:^0.2.15"
+    "@meonode/mui": "npm:^1.0.66"
+    "@meonode/ui": "npm:^0.2.16"
     "@mui/icons-material": "npm:^7.3.2"
     "@mui/material": "npm:^7.3.2"
     "@mui/types": "npm:^7.4.6"
     "@reduxjs/toolkit": "npm:^2.9.0"
     "@types/lodash": "npm:^4.17.20"
-    "@types/node": "npm:^22.18.1"
-    "@types/react": "npm:^19.1.12"
+    "@types/node": "npm:^22.18.3"
+    "@types/react": "npm:^19.1.13"
     "@types/react-dom": "npm:^19.1.9"
     "@types/react-syntax-highlighter": "npm:^15.5.13"
     "@types/tinycolor2": "npm:^1.4.6"
@@ -3960,7 +3969,7 @@ __metadata:
     react: "npm:^19.1.1"
     react-dom: "npm:^19.1.1"
     react-redux: "npm:^9.2.0"
-    react-router: "npm:^7.9.0"
+    react-router: "npm:^7.9.1"
     react-syntax-highlighter: "npm:^15.6.6"
     rollup-plugin-visualizer: "npm:^6.0.3"
     sharp: "npm:^0.34.3"
@@ -4584,9 +4593,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router@npm:^7.9.0":
-  version: 7.9.0
-  resolution: "react-router@npm:7.9.0"
+"react-router@npm:^7.9.1":
+  version: 7.9.1
+  resolution: "react-router@npm:7.9.1"
   dependencies:
     cookie: "npm:^1.0.1"
     set-cookie-parser: "npm:^2.6.0"
@@ -4596,7 +4605,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/71a14785b0b8d156d11cd08e0efbbd149a281bcd50e88d865a2c536c8252aa47ab8d295280edb1faaf7362df589aa535681003aa7a3998271784a69e21a250ea
+  checksum: 10c0/27448e4c84199d240f6a15d503cf26509320fd4ea31aec6f12a427ac4a560a320321e9b119981eddad25801c062be0f814d4461174f69efdc9f9e5af14cf6915
   languageName: node
   linkType: hard
 

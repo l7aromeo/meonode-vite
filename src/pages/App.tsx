@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Component, Column, Row, Center, H1, H2, H3, Text, Button, Div, Section, A, Node } from '@meonode/ui'
+import { Component, Column, Row, Center, H1, H2, H3, Text, Button, Div, Section, A, Node, Absolute } from '@meonode/ui'
 import { useTheme } from '@src/hooks/useTheme.ts'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { gruvboxLight } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
@@ -198,12 +198,8 @@ const AppPage = () => {
         overflow: 'hidden',
         children: [
           // Animated background pattern
-          Div({
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
+          Absolute({
+            inset: 0,
             backgroundImage: `url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='grid' width='10' height='10' patternUnits='userSpaceOnUse'><path d='M 10 0 L 0 0 0 10' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='0.5'/></pattern></defs><rect width='100' height='100' fill='url(%23grid)'/></svg>")`,
             animation: 'gridMove 20s linear infinite',
             css: {

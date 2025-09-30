@@ -12,13 +12,11 @@ interface ProvidersProps {
 }
 
 const ThemeProvider = ({ children }: { children?: Children }) => {
-  const [initialTheme, setInitialTheme] = useState<Theme>()
+  const [initialTheme, setInitialTheme] = useState<Theme>(lightTheme)
   useLayoutEffect(() => {
     const localTheme = localStorage.getItem('theme') || 'light'
     setInitialTheme(localTheme === 'dark' ? lightTheme : darkTheme)
   }, [])
-
-  if (!initialTheme) return null
 
   return MeoThemeProvider({ theme: initialTheme, children }).render()
 }

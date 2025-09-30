@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { useDispatch, useSelector } from 'react-redux'
-import themeSlice from '@src/redux/slice/theme.slice'
+import appSlice from '@src/redux/slice/app.slice.ts'
 
 export const store = configureStore({
   reducer: {
-    theme: themeSlice,
+    appReducer: appSlice,
+    // Add your reducers here
   },
 })
 

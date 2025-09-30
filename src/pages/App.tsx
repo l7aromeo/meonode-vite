@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Component, Column, Row, Center, H1, H2, H3, Text, Button, Div, Section, A, Node, Absolute } from '@meonode/ui'
-import { useTheme } from '@src/hooks/useTheme.ts'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { gruvboxLight } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
@@ -183,11 +182,9 @@ const InstallCommand = Component(() =>
 
 // Main homepage component
 const AppPage = () => {
-  const theme = useTheme()
   const [showCodeComparison, setShowCodeComparison] = useState(false)
 
   return Column({
-    theme: theme.system,
     children: [
       // Hero Section
       Section({

@@ -25,7 +25,7 @@ export default defineConfig({
     ViteImageOptimizer(),
     obfuscator({
       options: {
-        sourceMap: true,
+        sourceMap: process.env.NODE_ENV !== 'production',
         stringArray: false,
         optionsPreset: 'low-obfuscation',
       },

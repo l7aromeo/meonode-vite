@@ -1,10 +1,10 @@
 import { createBrowserRouter, type RouteObject, RouterProvider } from 'react-router'
 import { lazy, Suspense } from 'react'
-import { Absolute, Center, Node, type NodeElement } from '@meonode/ui'
+import { Absolute, Center, Node, type NodeElementType } from '@meonode/ui'
 import { CircularProgress } from '@meonode/mui'
 
 type RouteType = Omit<RouteObject, 'children' | 'element'> & {
-  element?: NodeElement
+  element?: NodeElementType
   children?: RouteType[]
 }
 

@@ -1,6 +1,5 @@
 import { Center, Column, Div, Portal, Row, Span, type NodeElement } from '@meonode/ui'
 import { Box, Button, Fade, Popover, Slide } from '@meonode/mui'
-import { useTheme } from '@src/hooks/useTheme'
 import { easing, type PopoverProps } from '@mui/material'
 import tinycolor from 'tinycolor2'
 import { type CSSProperties, useEffect } from 'react'
@@ -30,8 +29,6 @@ export const Confirm = Portal<ConfirmProps>(
     declineLabel = 'CANCEL',
     portal,
   }) {
-    const theme = useTheme()
-
     useEffect(() => {
       const handleEsc = (event: KeyboardEvent) => {
         if (event.key === 'Escape') {
@@ -49,7 +46,7 @@ export const Confirm = Portal<ConfirmProps>(
       position: 'absolute',
       display: 'flex',
       flexDirection: 'column',
-      theme: theme.system,
+
       top: 0,
       left: 0,
       right: 0,
@@ -112,8 +109,6 @@ export const Confirm = Portal<ConfirmProps>(
 )
 
 export const Menu = Portal<Partial<Omit<PopoverProps, keyof CSSProperties | 'children'>>>(PortalProviders, function Menu({ children, portal, ...menuProps }) {
-  const theme = useTheme()
-
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -133,7 +128,6 @@ export const Menu = Portal<Partial<Omit<PopoverProps, keyof CSSProperties | 'chi
     disableAutoFocus: true,
     anchorOrigin: { vertical: 'bottom', horizontal: 'left' },
     ...menuProps,
-    theme: theme.system,
     onClose: () => {
       portal.unmount()
     },
@@ -163,8 +157,6 @@ type ModalProps = {
 }
 
 export const Modal = Portal<ModalProps>(PortalProviders, function Modal({ children, portal }) {
-  const theme = useTheme()
-
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -181,7 +173,6 @@ export const Modal = Portal<ModalProps>(PortalProviders, function Modal({ childr
   return Fade({
     in: true,
     children: Center({
-      theme: theme.system,
       position: 'absolute',
       display: 'flex',
       flexDirection: 'column',

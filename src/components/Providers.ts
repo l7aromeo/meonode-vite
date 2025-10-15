@@ -1,4 +1,4 @@
-import { StrictMode, useEffect, useLayoutEffect, useState } from 'react'
+import { StrictMode, useEffect, useMemo, useState } from 'react'
 import { store } from '@src/redux/store'
 import { type Children, Node, type NodeElement, type Theme } from '@meonode/ui'
 import { Provider as ReduxProvider } from 'react-redux'
@@ -12,10 +12,10 @@ interface ProvidersProps {
 }
 
 const ThemeProvider = ({ children }: { children?: Children }) => {
-  const [initialTheme, setInitialTheme] = useState<Theme>(lightTheme)
-  useLayoutEffect(() => {
-    const localTheme = localStorage.getItem('theme') || 'light'
-    setInitialTheme(localTheme === 'dark' ? lightTheme : darkTheme)
+  const initialTheme = useMemo<Theme>(() => {
+    // Initialize from localStorage
+    const stored = localStorage.getItem('theme')
+    return stored === 'dark' ? darkTheme : lightTheme
   }, [])
 
   return MeoThemeProvider({ theme: initialTheme, children }).render()

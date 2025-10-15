@@ -3,7 +3,7 @@ import { Box, Button, Fade, Popover, Slide } from '@meonode/mui'
 import { easing, type PopoverProps } from '@mui/material'
 import tinycolor from 'tinycolor2'
 import { type CSSProperties, useEffect } from 'react'
-import { PortalProviders } from '@src/components/Providers'
+import { PortalWrapper } from '@src/components/Wrapper.ts'
 
 type ConfirmProps = {
   title: string
@@ -17,7 +17,7 @@ type ConfirmProps = {
 }
 
 export const Confirm = Portal<ConfirmProps>(
-  PortalProviders,
+  PortalWrapper,
   function Confirm({
     title,
     message,
@@ -108,7 +108,7 @@ export const Confirm = Portal<ConfirmProps>(
   },
 )
 
-export const Menu = Portal<Partial<Omit<PopoverProps, keyof CSSProperties | 'children'>>>(PortalProviders, function Menu({ children, portal, ...menuProps }) {
+export const Menu = Portal<Partial<Omit<PopoverProps, keyof CSSProperties | 'children'>>>(PortalWrapper, function Menu({ children, portal, ...menuProps }) {
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -156,7 +156,7 @@ type ModalProps = {
   children: NodeElement | NodeElement[]
 }
 
-export const Modal = Portal<ModalProps>(PortalProviders, function Modal({ children, portal }) {
+export const Modal = Portal<ModalProps>(PortalWrapper, function Modal({ children, portal }) {
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {

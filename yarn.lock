@@ -1232,28 +1232,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.0.71":
-  version: 1.0.71
-  resolution: "@meonode/mui@npm:1.0.71"
+"@meonode/mui@npm:^1.0.72":
+  version: 1.0.72
+  resolution: "@meonode/mui@npm:1.0.72"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
-    "@meonode/ui": ^0.3.8
-    "@mui/lab": ^7.0.0-beta.17
-    "@mui/material": ^7.3.2
-    "@mui/system": ^7.3.2
-    "@mui/types": ^7.4.6
-    "@mui/x-charts": ^8.12.0
-    "@mui/x-charts-pro": ^8.12.0
-    "@mui/x-data-grid": ^8.12.1
-    "@mui/x-data-grid-premium": ^8.12.1
-    "@mui/x-data-grid-pro": ^8.12.1
-    "@mui/x-date-pickers": ^8.12.0
-    "@mui/x-date-pickers-pro": ^8.12.0
-    "@mui/x-tree-view": ^8.12.0
-    "@mui/x-tree-view-pro": ^8.12.0
-    react: ">=18.3.1"
-  checksum: 10c0/1bf1f9840d23dcab0f6a1c28ab4bfa5b8fdf48477fba80b563b0d405ca8ec3a1042d574c6d790a48bae01e475788afcd6e9da817f459554500b37e71aef0e6c7
+    "@meonode/ui": ^0.3.14
+    "@mui/lab": ^7.0.1-beta.18
+    "@mui/material": ^7.3.4
+    "@mui/system": ^7.3.3
+    "@mui/types": ^7.4.7
+    "@mui/x-charts": ^8.16.0
+    "@mui/x-charts-pro": ^8.16.0
+    "@mui/x-data-grid": ^8.16.0
+    "@mui/x-data-grid-premium": ^8.16.0
+    "@mui/x-data-grid-pro": ^8.16.0
+    "@mui/x-date-pickers": ^8.16.0
+    "@mui/x-date-pickers-pro": ^8.16.0
+    "@mui/x-tree-view": ^8.16.0
+    "@mui/x-tree-view-pro": ^8.16.0
+    react: ">=19.2.0"
+  checksum: 10c0/55ab0910f47b9582aa5a0634517d81b46de4d9cec23dcae96f1bebb6b8eb2382657b03919f7ae4f4a6f5cc111f8fc2ec7894d9602f7e1458c813077ff0a5e045
   languageName: node
   linkType: hard
 
@@ -4218,7 +4218,7 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.38.0"
-    "@meonode/mui": "npm:^1.0.71"
+    "@meonode/mui": "npm:^1.0.72"
     "@meonode/ui": "npm:^0.3.14"
     "@mui/icons-material": "npm:^7.3.4"
     "@mui/material": "npm:^7.3.4"

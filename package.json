@@ -12,9 +12,9 @@
   "dependencies": {
     "@emotion/styled": "^11.14.1",
     "@meonode/mui": "^1.0.72",
-    "@meonode/ui": "^0.3.14",
-    "@mui/icons-material": "^7.3.4",
-    "@mui/material": "^7.3.4",
+    "@meonode/ui": "^0.3.15",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
     "@reduxjs/toolkit": "^2.10.0",
     "notistack": "^3.0.2",
     "react": "^19.2.0",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@mui/types": "^7.4.7",
+    "@mui/types": "^7.4.8",
     "@types/lodash": "^4.17.20",
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",

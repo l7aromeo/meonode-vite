@@ -15,7 +15,14 @@ const routes: RouteType[] = [
   },
 ]
 
-const Fallback = Absolute({ top: 0, left: 0, right: 0, bottom: 0, children: Center({ height: '100%', children: CircularProgress({ size: 50 }) }) }).render()
+const Fallback = Absolute({
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  backgroundColor: 'theme.base',
+  children: Center({ height: '100%', children: CircularProgress({ size: 50, color: 'theme.base.content' }) }),
+}).render()
 
 const wrapElement = (routes: RouteType[]): RouteObject[] => {
   return routes.map(route => ({

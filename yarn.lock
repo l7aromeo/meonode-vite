@@ -995,16 +995,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.3.15":
-  version: 0.3.15
-  resolution: "@meonode/ui@npm:0.3.15"
+"@meonode/ui@npm:^0.3.16":
+  version: 0.3.16
+  resolution: "@meonode/ui@npm:0.3.16"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/45613010c440701e6d557dcac8b931b0e2af3c0d687df10c196361d3eb85c9320894e4319ff60fabdda2a949c0ae9f1705ce17109295f2a68fd319516d33d0c6
+  checksum: 10c0/692e5c29ffc830ea5f14573418899539b6e146d0ca62e17b8eebae169f1532eb6f0e922106c013fdde2910583677ffdf6e1095e437881355bd06fc494dc8d2c6
   languageName: node
   linkType: hard
 
@@ -1239,9 +1239,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reduxjs/toolkit@npm:^2.10.0":
-  version: 2.10.0
-  resolution: "@reduxjs/toolkit@npm:2.10.0"
+"@reduxjs/toolkit@npm:^2.10.1":
+  version: 2.10.1
+  resolution: "@reduxjs/toolkit@npm:2.10.1"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     "@standard-schema/utils": "npm:^0.3.0"
@@ -1257,7 +1257,7 @@ __metadata:
       optional: true
     react-redux:
       optional: true
-  checksum: 10c0/413ccbce8caceaf458b2f3de10d36380beef34b017eec2482aba5b9953101a3c6a90b5a0c656b278e60ac97ef40c29385c94e8557fa6411007bf1c43e5b5b4ce
+  checksum: 10c0/0296a73c8dfbe8b2a14095cfaaf67a8e4c5537b164c021bdb81c43922d10042a2fe733fbdfc956f9233884a6db5491fbc6d950a8883e1cd6137251db392f6a9e
   languageName: node
   linkType: hard
 
@@ -1265,6 +1265,13 @@ __metadata:
   version: 1.0.0-beta.43
   resolution: "@rolldown/pluginutils@npm:1.0.0-beta.43"
   checksum: 10c0/1c17a0b16c277a0fdbab080fd22ef91e37c1f0d710ecfdacb6a080068062eb14ff030d0e9d2ec2325a1d4246dba0c49625755c82c0090f6cbf98d16e80183e02
+  languageName: node
+  linkType: hard
+
+"@rolldown/pluginutils@npm:1.0.0-beta.46":
+  version: 1.0.0-beta.46
+  resolution: "@rolldown/pluginutils@npm:1.0.0-beta.46"
+  checksum: 10c0/45664c89b2e24262b103457ca14e1aa0b7f658f5ace4eb4f10f327d88810cad908ec3150d8fc646fe285b96eb66b25defce97aa6eb0a45fe23a8a2dbcda0040c
   languageName: node
   linkType: hard
 
@@ -1886,15 +1893,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react-swc@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@vitejs/plugin-react-swc@npm:4.2.0"
+"@vitejs/plugin-react-swc@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@vitejs/plugin-react-swc@npm:4.2.1"
   dependencies:
-    "@rolldown/pluginutils": "npm:1.0.0-beta.43"
+    "@rolldown/pluginutils": "npm:1.0.0-beta.46"
     "@swc/core": "npm:^1.13.5"
   peerDependencies:
     vite: ^4 || ^5 || ^6 || ^7
-  checksum: 10c0/6be31f6771853b8cda9e6ce55dc50589fc181bfba37be1547434355ad70e12cb2ed409fa5bd88332f3e5b3ef895fb67c786f83f02ca1c0351302a231f2265fa0
+  checksum: 10c0/094e24267eec3201473ac19eea56fc68728245922cd86b07c4163ba2557832231b868fb3dd7f602a39d1e71b5eda5b4f4f16d3547c21392b0f63df4e7a0829ba
   languageName: node
   linkType: hard
 
@@ -3956,11 +3963,11 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.39.1"
     "@meonode/mui": "npm:^1.0.72"
-    "@meonode/ui": "npm:^0.3.15"
+    "@meonode/ui": "npm:^0.3.16"
     "@mui/icons-material": "npm:^7.3.5"
     "@mui/material": "npm:^7.3.5"
     "@mui/types": "npm:^7.4.8"
-    "@reduxjs/toolkit": "npm:^2.10.0"
+    "@reduxjs/toolkit": "npm:^2.10.1"
     "@types/lodash": "npm:^4.17.20"
     "@types/node": "npm:^24.10.0"
     "@types/react": "npm:^19.2.2"
@@ -3968,7 +3975,7 @@ __metadata:
     "@types/react-syntax-highlighter": "npm:^15.5.13"
     "@types/tinycolor2": "npm:^1.4.6"
     "@vitejs/plugin-react": "npm:^5.1.0"
-    "@vitejs/plugin-react-swc": "npm:^4.2.0"
+    "@vitejs/plugin-react-swc": "npm:^4.2.1"
     eslint: "npm:^9.39.1"
     eslint-plugin-prettier: "npm:^5.5.4"
     eslint-plugin-react-hooks: "npm:^7.0.1"
@@ -3987,7 +3994,7 @@ __metadata:
     svgo: "npm:^4.0.0"
     typescript: "npm:~5.9.3"
     typescript-eslint: "npm:^8.46.3"
-    vite: "npm:^7.1.12"
+    vite: "npm:^7.2.0"
     vite-imagetools: "npm:^9.0.0"
     vite-plugin-bundle-obfuscator: "npm:^1.8.0"
     vite-plugin-image-optimizer: "npm:^2.0.3"
@@ -5448,9 +5455,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^7.1.12":
-  version: 7.1.12
-  resolution: "vite@npm:7.1.12"
+"vite@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "vite@npm:7.2.0"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.5.0"
@@ -5499,7 +5506,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/cef4d4b4a84e663e09b858964af36e916892ac8540068df42a05ced637ceeae5e9ef71c72d54f3cfc1f3c254af16634230e221b6e2327c2a66d794bb49203262
+  checksum: 10c0/ab2579dffa1bc3dd169a9360499827920d83218b2e9b512c6e2c5220d58306abd238e0c87b4292a40b0b48de3323bda2ac418f6df8dcc3459d6cdb148b287619
   languageName: node
   linkType: hard
 

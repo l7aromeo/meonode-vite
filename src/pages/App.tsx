@@ -557,7 +557,7 @@ const AppPage = () => {
                 justifyContent: 'center',
                 flexWrap: 'wrap',
                 children: [
-                  Button('Documentation', {
+                  A({
                     backgroundColor: 'transparent',
                     border: '2px solid theme.primary',
                     color: 'theme.primary',
@@ -565,15 +565,20 @@ const AppPage = () => {
                     borderRadius: 8,
                     cursor: 'pointer',
                     transition: 'all 0.3s ease',
+                    textDecoration: 'none',
                     css: {
                       '&:hover': {
                         backgroundColor: 'theme.base.deep',
                         color: 'theme.text.primary',
                       },
                     },
+                    href: 'https://ui.meonode.com',
+                    target: '_blank',
+                    rel: 'noopener noreferrer',
+                    children: 'Documentation',
                   }),
 
-                  Button('GitHub', {
+                  A({
                     backgroundColor: 'transparent',
                     border: '2px solid theme.primary',
                     color: 'theme.primary',
@@ -581,28 +586,17 @@ const AppPage = () => {
                     borderRadius: 8,
                     cursor: 'pointer',
                     transition: 'all 0.3s ease',
+                    textDecoration: 'none',
                     css: {
                       '&:hover': {
                         backgroundColor: 'theme.base.deep',
                         color: 'theme.text.primary',
                       },
                     },
-                  }),
-
-                  Button('Community', {
-                    backgroundColor: 'transparent',
-                    border: '2px solid theme.primary',
-                    color: 'theme.primary',
-                    padding: 'theme.spacing.md',
-                    borderRadius: 8,
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    css: {
-                      '&:hover': {
-                        backgroundColor: 'theme.base.deep',
-                        color: 'theme.text.primary',
-                      },
-                    },
+                    href: 'https://github.com/l7aromeo/meonode-ui',
+                    target: '_blank',
+                    rel: 'noopener noreferrer',
+                    children: 'GitHub',
                   }),
                 ],
               }),

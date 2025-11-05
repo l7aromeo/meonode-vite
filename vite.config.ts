@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react'
 import { visualizer } from 'rollup-plugin-visualizer'
 import * as path from 'node:path'
 import { dependencies } from './package.json'
@@ -20,7 +20,11 @@ function renderChunks(deps: Record<string, string>) {
 export default defineConfig({
   mode: process.env.NODE_ENV,
   plugins: [
-    react(),
+    react({
+      babel: {
+        plugins: ['babel-plugin-react-compiler'],
+      },
+    }),
     imagetools(),
     ViteImageOptimizer(),
     obfuscator({

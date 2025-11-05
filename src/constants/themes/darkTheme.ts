@@ -1,6 +1,7 @@
 import themeSystem from '@src/constants/themes/themeSystem'
+import type { Theme } from '@meonode/ui'
 
-const darkTheme = {
+const darkTheme: Theme = {
   mode: 'dark',
   system: {
     ...themeSystem,

@@ -1215,16 +1215,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.3.17":
-  version: 0.3.17
-  resolution: "@meonode/ui@npm:0.3.17"
+"@meonode/ui@npm:^0.3.18":
+  version: 0.3.18
+  resolution: "@meonode/ui@npm:0.3.18"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/a9fa075e344a8af7cc489ba4b5b1673f6dede9c7ae24b894fa0011b19a2c0c27d89a6c55602d600c2e05a06829c06a36dc6a681507981e65d6c4b83d051a46c9
+  checksum: 10c0/57791081b7dcdf081f97d7626940cac293ee00697d9b28f3a7a77eee799e3920bc48dd6dbc1de85dce26452eafed0b3cc165293eb85ecac9fdaccf8f26b165a9
   languageName: node
   linkType: hard
 
@@ -1773,12 +1773,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "@types/react-dom@npm:19.2.2"
+"@types/react-dom@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "@types/react-dom@npm:19.2.3"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: 10c0/6154dfb8e7a638313d7fa15b2b16494f2235afda4c43be37d10f34e5c7a730f6b95117facb5e6eebc73b15cceea7f6da23be46cda5d2262fd00fd7e6069547e3
+  checksum: 10c0/b486ebe0f4e2fb35e2e108df1d8fc0927ca5d6002d5771e8a739de11239fe62d0e207c50886185253c99eb9dedfeeb956ea7429e5ba17f6693c7acb4c02f8cd1
   languageName: node
   linkType: hard
 
@@ -4050,7 +4050,7 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.39.1"
     "@meonode/mui": "npm:^1.0.72"
-    "@meonode/ui": "npm:^0.3.17"
+    "@meonode/ui": "npm:^0.3.18"
     "@mui/icons-material": "npm:^7.3.5"
     "@mui/material": "npm:^7.3.5"
     "@mui/types": "npm:^7.4.8"
@@ -4058,7 +4058,7 @@ __metadata:
     "@types/lodash": "npm:^4.17.20"
     "@types/node": "npm:^24.10.1"
     "@types/react": "npm:^19.2.3"
-    "@types/react-dom": "npm:^19.2.2"
+    "@types/react-dom": "npm:^19.2.3"
     "@types/react-syntax-highlighter": "npm:^15.5.13"
     "@types/tinycolor2": "npm:^1.4.6"
     "@vitejs/plugin-react": "npm:^5.1.0"

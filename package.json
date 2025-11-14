@@ -12,7 +12,7 @@
   "dependencies": {
     "@emotion/styled": "^11.14.1",
     "@meonode/mui": "^1.1.0",
-    "@meonode/ui": "^0.4.3",
+    "@meonode/ui": "^0.4.4",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
     "@reduxjs/toolkit": "^2.10.1",

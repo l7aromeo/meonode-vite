@@ -1215,16 +1215,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.4.4":
-  version: 0.4.4
-  resolution: "@meonode/ui@npm:0.4.4"
+"@meonode/ui@npm:^0.4.5":
+  version: 0.4.5
+  resolution: "@meonode/ui@npm:0.4.5"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/d1337b50114f1e89ba9b97ecae9299170cee867a12e91f8775408a091e11d666a0640b3fb4915b7e21d2cd155b27b74f2797a0ccfc3926a06b59cfc6d02bc0c5
+  checksum: 10c0/9c4d73bb6dac239d7e2491932fd422fdec74fde37a75670d5a071443fe42e0484fb788e8b1ee546477f3daba2c20c307b144ec7d2211666155cdd0bf23823761
   languageName: node
   linkType: hard
 
@@ -1809,12 +1809,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.4":
-  version: 19.2.4
-  resolution: "@types/react@npm:19.2.4"
+"@types/react@npm:^19.2.5":
+  version: 19.2.5
+  resolution: "@types/react@npm:19.2.5"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/c878262c4bce047e53a44ef644088fce359ebdfdca7060a4ac1717c8362563b9506a7ebae145977836e95d5948b8f8b426dcd516044c3a3c0563a6f1b60408ce
+  checksum: 10c0/1f9a92c73a5ea5b167f59cd0b5b9460fde65bd22b63b6d23bfaace8ad38537df127c97657418b4912a7a03a66e6451e82a41b84718d638ec1c8e4f0515d94793
   languageName: node
   linkType: hard
 
@@ -4050,14 +4050,14 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.39.1"
     "@meonode/mui": "npm:^1.1.0"
-    "@meonode/ui": "npm:^0.4.4"
+    "@meonode/ui": "npm:^0.4.5"
     "@mui/icons-material": "npm:^7.3.5"
     "@mui/material": "npm:^7.3.5"
     "@mui/types": "npm:^7.4.8"
     "@reduxjs/toolkit": "npm:^2.10.1"
     "@types/lodash": "npm:^4.17.20"
     "@types/node": "npm:^24.10.1"
-    "@types/react": "npm:^19.2.4"
+    "@types/react": "npm:^19.2.5"
     "@types/react-dom": "npm:^19.2.3"
     "@types/react-syntax-highlighter": "npm:^15.5.13"
     "@types/tinycolor2": "npm:^1.4.6"

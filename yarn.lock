@@ -1215,16 +1215,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "@meonode/ui@npm:0.4.8"
+"@meonode/ui@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@meonode/ui@npm:0.4.9"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/0ae9431e0f7eec931ac7a4465cdfad8a141859ba2a27bb401498fa87f5bec62826dded93c50a6445e3acfbebbd879627f3259264a9e73d607736f50f641ac500
+  checksum: 10c0/16965e2611cad110e61ee0464b48b979e3c1bf3844642c22922d143eeba1d2830c100914657b818350f418d25ca07ba2c79ca3593a069ce3e2b9e18049eca0bf
   languageName: node
   linkType: hard
 
@@ -4082,7 +4082,7 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.39.1"
     "@meonode/mui": "npm:^1.1.0"
-    "@meonode/ui": "npm:^0.4.8"
+    "@meonode/ui": "npm:^0.4.9"
     "@mui/icons-material": "npm:^7.3.5"
     "@mui/material": "npm:^7.3.5"
     "@mui/types": "npm:^7.4.8"

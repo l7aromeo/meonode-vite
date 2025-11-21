@@ -1190,9 +1190,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@meonode/mui@npm:1.1.0"
+"@meonode/mui@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@meonode/mui@npm:1.1.1"
+  dependencies:
+    csstype: "npm:^3.2.3"
   peerDependencies:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
@@ -1211,20 +1213,20 @@ __metadata:
     "@mui/x-tree-view": ^8.18.0
     "@mui/x-tree-view-pro": ^8.18.0
     react: ">=19.2.0"
-  checksum: 10c0/0f3be7580a4da00463df3306674d353b01ce45fdfdcabbfc4dc6746fbcd914444898a115bdebbc5a3fa36639d2f8ef30d9cf296847f7953ca8a61fb5b743937e
+  checksum: 10c0/d0988166da95c99cb38421a5411cea8da842cb9a2d6e558d705dc4491f63874fe2a59d0343c8053e8d4a155eb7841c0aa52261881de9646328e9b40d883cc679
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^0.4.10":
-  version: 0.4.10
-  resolution: "@meonode/ui@npm:0.4.10"
+"@meonode/ui@npm:^0.4.11":
+  version: 0.4.11
+  resolution: "@meonode/ui@npm:0.4.11"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/64a707e0e3f63fc8534309b993026f6045fb576382d7ca8a527d341e32b8bf9a0cc382e984bb5862305210dcf5a27e6ac8e24a426309c6f4af8b8fafb5b16dc8
+  checksum: 10c0/01ff9e5496cfc5f36dbb6945e0a1fb5949f8d5a277f7ad6361fdf3d77fa9eab82d38639744d2499c089412b4b2b5dfff6399d631a496a8d180bcffe40d7493cd
   languageName: node
   linkType: hard
 
@@ -2572,7 +2574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.2.2":
+"csstype@npm:^3.2.2, csstype@npm:^3.2.3":
   version: 3.2.3
   resolution: "csstype@npm:3.2.3"
   checksum: 10c0/cd29c51e70fa822f1cecd8641a1445bed7063697469d35633b516e60fe8c1bde04b08f6c5b6022136bb669b64c63d4173af54864510fbb4ee23281801841a3ce
@@ -4081,8 +4083,8 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.39.1"
-    "@meonode/mui": "npm:^1.1.0"
-    "@meonode/ui": "npm:^0.4.10"
+    "@meonode/mui": "npm:^1.1.1"
+    "@meonode/ui": "npm:^0.4.11"
     "@mui/icons-material": "npm:^7.3.5"
     "@mui/material": "npm:^7.3.5"
     "@mui/types": "npm:^7.4.8"

@@ -5,7 +5,6 @@ import * as path from 'node:path'
 import { dependencies } from './package.json'
 import { imagetools } from 'vite-imagetools'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
-import obfuscator from 'vite-plugin-bundle-obfuscator'
 
 function renderChunks(deps: Record<string, string>) {
   const chunks: Record<string, string[]> = {}
@@ -27,13 +26,6 @@ export default defineConfig({
     }),
     imagetools(),
     ViteImageOptimizer(),
-    obfuscator({
-      options: {
-        sourceMap: process.env.NODE_ENV !== 'production',
-        stringArray: false,
-        optionsPreset: 'low-obfuscation',
-      },
-    }),
     visualizer({ open: true, sourcemap: true, filename: 'bundle_report.html' }),
   ],
   build: {

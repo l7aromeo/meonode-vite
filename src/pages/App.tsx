@@ -1,9 +1,12 @@
-import { Node, Center, Column, Row, H1, H2, H3, Button, Text, Portal, A, Div } from '@meonode/ui'
+import { Node, Center, Column, Row, H1, H2, H3, Button, Text, Portal, A, Div, useTheme } from '@meonode/ui'
 import { PortalWrapper } from '@src/components/Wrapper'
 import { useEffect, useState } from 'react'
+import darkTheme from '@src/constants/themes/darkTheme.ts'
+import lightTheme from '@src/constants/themes/lightTheme.ts'
 
 export default function HomePage() {
   const [activeFeature, setActiveFeature] = useState<number | null>(null)
+  const { theme, setTheme } = useTheme()
 
   return Center({
     minHeight: '100vh',
@@ -15,6 +18,27 @@ export default function HomePage() {
       padding: 'theme.spacing.xl',
       gap: 'theme.spacing.2xl',
       children: [
+        Center({
+          children: Button('Switch Theme', {
+            backgroundColor: 'transparent',
+            color: 'theme.primary',
+            padding: 'theme.spacing.sm theme.spacing.md',
+            borderRadius: '12px',
+            border: '2px solid theme.primary',
+            fontSize: 'theme.text.lg',
+            fontWeight: 600,
+            cursor: 'pointer',
+            css: {
+              '&:hover': {
+                backgroundColor: 'theme.primary',
+                color: 'theme.primary.content',
+                boxShadow: 'theme.shadow.lg',
+                transform: 'translateY(-3px)',
+              },
+            },
+            onClick: () => setTheme(theme.mode === 'light' ? darkTheme : lightTheme),
+          }),
+        }),
         // Hero Section
         Node(HeroSection),
 

@@ -6,7 +6,7 @@ import lightTheme from '@src/constants/themes/lightTheme.ts'
 
 export default function HomePage() {
   const [activeFeature, setActiveFeature] = useState<number | null>(null)
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
 
   return Center({
     minHeight: '100vh',
@@ -36,7 +36,10 @@ export default function HomePage() {
                 transform: 'translateY(-3px)',
               },
             },
-            onClick: () => setTheme(theme.mode === 'light' ? darkTheme : lightTheme),
+            onClick: () =>
+              setTheme(theme => {
+                return theme.mode === 'light' ? darkTheme : lightTheme
+              }),
           }),
         }),
         // Hero Section

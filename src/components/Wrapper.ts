@@ -1,6 +1,6 @@
-import { StrictMode, useEffect, useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { store } from '@src/redux/store'
-import { type Children, Node, type NodeElement, type Theme } from '@meonode/ui'
+import { type Children, Node, type NodeElement, type Theme, PortalProvider, PortalHost } from '@meonode/ui'
 import { Provider as ReduxProvider } from 'react-redux'
 import { SnackbarProvider } from 'notistack'
 import lightTheme from '@src/constants/themes/lightTheme.ts'
@@ -22,31 +22,13 @@ const ThemeWrapper = ({ children }: { children?: Children }) => {
 }
 
 export const Wrapper = ({ children }: WrappersProps) =>
-  Node(ReduxProvider, { store, children: Node(ThemeWrapper, { children: Node(SnackbarProvider, { children }) }) })
-
-const PortalThemeWrapper = ({ children }: { children?: Children }) => {
-  const [theme, setTheme] = useState<Theme>(() => {
-    // Initialize from localStorage
-    const stored = localStorage.getItem('theme')
-    return stored === 'dark' ? darkTheme : lightTheme
+  Node(ReduxProvider, {
+    store,
+    children: Node(ThemeWrapper, {
+      children: Node(SnackbarProvider, {
+        children: PortalProvider({
+          children: [children, PortalHost()],
+        }),
+      }),
+    }),
   })
-
-  useEffect(() => {
-    const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'theme') {
-        setTheme(e.newValue === 'dark' ? darkTheme : lightTheme)
-      }
-    }
-
-    // Listen for changes from other tabs/windows
-    window.addEventListener('storage', handleStorageChange)
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange)
-    }
-  }, [])
-
-  return MeoThemeWrapper({ theme, children }).render()
-}
-
-export const PortalWrapper = Node(StrictMode, { children: Node(ReduxProvider, { store, children: Node(PortalThemeWrapper) }) })

@@ -1357,16 +1357,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@meonode/ui@npm:1.1.4"
+"@meonode/ui@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@meonode/ui@npm:1.2.0"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/b0ed5797bf57be7ec8feadf7ba61ae6ef1e5fd3ba474c5219fc43585fd596ec996bade465922c875cdc4d8a376cc18507e8fdb6ca44e0ceeb42096d43e67e6df
+  checksum: 10c0/59353b1198792541850a85bf5077504d25dfb3f78b4f939eb22221fc9c1692376d868694f1036259944f02fc61f0c502b141e55860e444dbbc85ef6db61cfbf0
   languageName: node
   linkType: hard
 
@@ -2233,6 +2233,15 @@ __metadata:
   bin:
     baseline-browser-mapping: dist/cli.js
   checksum: 10c0/5a63c1c241d288e5c79aa32a1cbea335b5af899172161aa9f9701a67c5b9b55ea3b3945a70a842385374627dde1de27504641bc95257d8c2e81f0c593c719121
+  languageName: node
+  linkType: hard
+
+"baseline-browser-mapping@npm:^2.9.19":
+  version: 2.9.19
+  resolution: "baseline-browser-mapping@npm:2.9.19"
+  bin:
+    baseline-browser-mapping: dist/cli.js
+  checksum: 10c0/569928db78bcd081953d7db79e4243a59a579a34b4ae1806b9b42d3b7f84e5bc40e6e82ae4fa06e7bef8291bf747b33b3f9ef5d3c6e1e420cb129d9295536129
   languageName: node
   linkType: hard
 
@@ -3642,7 +3651,7 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.39.2"
     "@meonode/mui": "npm:^1.2.2"
-    "@meonode/ui": "npm:^1.1.4"
+    "@meonode/ui": "npm:^1.2.0"
     "@mui/icons-material": "npm:^7.3.8"
     "@mui/material": "npm:^7.3.8"
     "@mui/types": "npm:^7.4.11"
@@ -3655,6 +3664,7 @@ __metadata:
     "@types/tinycolor2": "npm:^1.4.6"
     "@vitejs/plugin-react": "npm:^5.1.4"
     babel-plugin-react-compiler: "npm:^1.0.0"
+    baseline-browser-mapping: "npm:^2.9.19"
     eslint: "npm:^9.39.2"
     eslint-plugin-prettier: "npm:^5.5.5"
     eslint-plugin-react-hooks: "npm:^7.0.1"

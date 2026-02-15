@@ -7,7 +7,7 @@ import eslintPluginPrettier from 'eslint-plugin-prettier'
 import unusedImports from 'eslint-plugin-unused-imports'
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  { ignores: ['dist', '.yarn', 'node-modules'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],

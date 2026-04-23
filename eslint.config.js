@@ -5,19 +5,24 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import eslintPluginPrettier from 'eslint-plugin-prettier'
 import unusedImports from 'eslint-plugin-unused-imports'
+import { defineConfig, globalIgnores } from 'eslint/config'
 
-export default tseslint.config(
-  { ignores: ['dist', '.yarn', 'node-modules'] },
+export default defineConfig([
+  globalIgnores(['dist', '.yarn']),
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
+    extends: [
+      js.configs.recommended,
+      tseslint.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
     languageOptions: {
-      ecmaVersion: 'latest',
+      ecmaVersion: 2020,
       globals: globals.browser,
     },
     plugins: {
       'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
       prettier: eslintPluginPrettier,
       'unused-imports': unusedImports,
     },
@@ -40,4 +45,4 @@ export default tseslint.config(
       'unused-imports/no-unused-imports': 'error',
     },
   },
-)
+])

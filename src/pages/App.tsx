@@ -1,7 +1,7 @@
 import { Node, Center, Column, Row, H1, H2, H3, Button, Text, A, Div, useTheme, usePortal, type PortalLayerProps } from '@meonode/ui'
-import { useEffect, useState } from 'react'
-import darkTheme from '@src/constants/themes/darkTheme.ts'
-import lightTheme from '@src/constants/themes/lightTheme.ts'
+import { useEffect, useState, type Dispatch, type SetStateAction } from 'react'
+import darkTheme from '@src/constants/themes/darkTheme'
+import lightTheme from '@src/constants/themes/lightTheme'
 
 export default function HomePage() {
   const [activeFeature, setActiveFeature] = useState<number | null>(null)
@@ -59,7 +59,8 @@ export default function HomePage() {
 
 // Hero Section Component
 const HeroSection = () => {
-  const portal = usePortal()
+  const [count, setCount] = useState(0)
+  const portal = usePortal({ count, setCount })
 
   return Column({
     gap: 'theme.spacing.lg',
@@ -394,8 +395,7 @@ const CTASection = () =>
 // Enhanced Modal Components
 
 // Interactive Modal with more features
-const InteractiveModal = ({ close }: PortalLayerProps) => {
-  const [count, setCount] = useState(0)
+const InteractiveModal = ({ data, close }: PortalLayerProps<{ count: number; setCount: Dispatch<SetStateAction<number>> }>) => {
   const [theme, setTheme] = useState('primary')
 
   useEffect(() => {
@@ -448,7 +448,7 @@ const InteractiveModal = ({ close }: PortalLayerProps) => {
             backgroundColor: 'rgba(33, 150, 243, 0.05)',
             borderRadius: '12px',
             children: [
-              Text(`Counter: ${count}`, {
+              Text(`Counter: ${data.count}`, {
                 fontSize: 'theme.text.xl',
                 textAlign: 'center',
                 fontWeight: 600,
@@ -463,7 +463,7 @@ const InteractiveModal = ({ close }: PortalLayerProps) => {
                     padding: 'theme.spacing.sm theme.spacing.md',
                     borderRadius: '8px',
                     cursor: 'pointer',
-                    onClick: () => setCount(c => Math.max(0, c - 1)),
+                    onClick: () => data.setCount(c => Math.max(0, c - 1)),
                   }),
                   Button('+', {
                     backgroundColor: 'theme.success',
@@ -471,7 +471,7 @@ const InteractiveModal = ({ close }: PortalLayerProps) => {
                     padding: 'theme.spacing.sm theme.spacing.md',
                     borderRadius: '8px',
                     cursor: 'pointer',
-                    onClick: () => setCount(c => c + 1),
+                    onClick: () => data.setCount(c => c + 1),
                   }),
                 ],
               }),

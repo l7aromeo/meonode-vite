@@ -990,13 +990,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@meonode/mui@npm:1.4.0"
+"@meonode/mui@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@meonode/mui@npm:1.5.1"
   peerDependencies:
-    "@meonode/ui": ^1.4.3
+    "@meonode/ui": ^1.4.6
     "@mui/lab": ^9.0.0-beta.2
     "@mui/material": ^9.0.0
+    "@mui/material-nextjs": ^9.0.0
     "@mui/x-charts": 9.0.2
     "@mui/x-charts-pro": ^9.0.2
     "@mui/x-data-grid": ^9.0.2
@@ -1007,20 +1008,22 @@ __metadata:
     "@mui/x-tree-view": ^9.0.2
     "@mui/x-tree-view-pro": ^9.0.2
     react: ">=19.2.5"
-  checksum: 10c0/c072e1be8eecc1d04fab5f2c48486e8458c8b306a2d453182dd542e0b48b799c5a230f21a46b7dec071e0ce75c38a52d83ec78e37c2bbfa7390abbec67868e31
+  checksum: 10c0/095c7c3a2fee3f6ff334d14060a7d5a0a5799424a12ecd61366b4830f7d32945116ad5c794b91eb37011e30cc72e6b7afb5e5353d3d33ee79bc9f14656704c7e
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^1.4.3":
-  version: 1.4.3
-  resolution: "@meonode/ui@npm:1.4.3"
+"@meonode/ui@npm:^1.4.6":
+  version: 1.4.6
+  resolution: "@meonode/ui@npm:1.4.6"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
+    "@emotion/serialize": "npm:^1.3.3"
+    "@emotion/utils": "npm:^1.4.2"
   peerDependencies:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/3ee8b38b046b860ea631223555d2e493521119d66975b59266874bebae64e871fda12d3b49b0a91286204d8a2efa433a992dc00cd639bff8b456f6207d5e41b3
+  checksum: 10c0/7ee909fed4904c8da92f5aba0e189318b94ad7742c503e26b77f8a129898dd842bb2847989b981e526666de6564c91670629630eee034e3bb8107cfd288f2ac4
   languageName: node
   linkType: hard
 
@@ -3299,8 +3302,8 @@ __metadata:
   dependencies:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^10.0.1"
-    "@meonode/mui": "npm:^1.4.0"
-    "@meonode/ui": "npm:^1.4.3"
+    "@meonode/mui": "npm:^1.5.1"
+    "@meonode/ui": "npm:^1.4.6"
     "@mui/icons-material": "npm:^9.0.0"
     "@mui/material": "npm:^9.0.0"
     "@mui/types": "npm:^9.0.0"

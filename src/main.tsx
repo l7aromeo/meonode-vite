@@ -5,5 +5,5 @@ import { Wrapper } from '@src/components/Wrapper.ts'
 import '@src/assets/global.css'
 import { render } from '@meonode/ui/client'
 
-const App = Node(StrictMode, { children: Wrapper({ children: Routes() }) })
+const App = Node(StrictMode, { children: Node(Wrapper, { children: Routes() }) })
 render(App, document.getElementById('root')!)

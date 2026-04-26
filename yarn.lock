@@ -1012,9 +1012,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "@meonode/ui@npm:1.5.0"
+"@meonode/ui@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@meonode/ui@npm:1.5.1"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/serialize": "npm:^1.3.3"
@@ -1023,7 +1023,7 @@ __metadata:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/659da2a21656539ad9806bfdc49828d0fbe57d71322818adf16c4c91e5496454d56f9175d534995021598f3f9339b58239bedaed9fa9db07a583c3828a563569
+  checksum: 10c0/8e1a6cf62d93b6f417086704c103b0848ab3cf492649acde0421a5c5b9f0f958ccc575a625f7bb7894173370be07494e1e374016cee24b8d975d79260d649e93
   languageName: node
   linkType: hard
 
@@ -3294,7 +3294,7 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^10.0.1"
     "@meonode/mui": "npm:^1.5.1"
-    "@meonode/ui": "npm:^1.5.0"
+    "@meonode/ui": "npm:^1.5.1"
     "@mui/icons-material": "npm:^9.0.0"
     "@mui/material": "npm:^9.0.0"
     "@mui/types": "npm:^9.0.0"

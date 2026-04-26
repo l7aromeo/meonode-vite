@@ -1,10 +1,10 @@
-import themeSystem from '@src/constants/themes/themeSystem'
-import type { Theme } from '@meonode/ui'
+import baseThemeSystem from './baseThemeSystem'
+import type { MeoTheme } from '@meonode/ui'
 
-const darkTheme: Theme = {
+const darkTheme: MeoTheme = {
   mode: 'dark',
   system: {
-    ...themeSystem,
+    ...baseThemeSystem,
     primary: {
       default: '#db924b',
       content: '#110802',

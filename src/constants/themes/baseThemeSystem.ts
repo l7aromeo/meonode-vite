@@ -1,4 +1,10 @@
-const themeSystem = {
+import type { RadiusScale, SpacingScale, TextScale } from '@src/constants/themes/meonode'
+const baseThemeSystem: {
+  text: TextScale
+  spacing: SpacingScale
+  radius: RadiusScale
+  navbarHeight: string
+} = {
   text: {
     xs: '0.75rem', // 12px
     sm: '0.875rem', // 14px
@@ -36,4 +42,4 @@ const themeSystem = {
   navbarHeight: '58px',
 }
 
-export default themeSystem
+export default baseThemeSystem

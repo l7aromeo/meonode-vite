@@ -1012,9 +1012,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^1.4.6":
-  version: 1.4.6
-  resolution: "@meonode/ui@npm:1.4.6"
+"@meonode/ui@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@meonode/ui@npm:1.5.0"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/serialize": "npm:^1.3.3"
@@ -1023,7 +1023,7 @@ __metadata:
     "@emotion/cache": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/7ee909fed4904c8da92f5aba0e189318b94ad7742c503e26b77f8a129898dd842bb2847989b981e526666de6564c91670629630eee034e3bb8107cfd288f2ac4
+  checksum: 10c0/659da2a21656539ad9806bfdc49828d0fbe57d71322818adf16c4c91e5496454d56f9175d534995021598f3f9339b58239bedaed9fa9db07a583c3828a563569
   languageName: node
   linkType: hard
 
@@ -1839,15 +1839,6 @@ __metadata:
   version: 4.0.4
   resolution: "balanced-match@npm:4.0.4"
   checksum: 10c0/07e86102a3eb2ee2a6a1a89164f29d0dbaebd28f2ca3f5ca786f36b8b23d9e417eb3be45a4acf754f837be5ac0a2317de90d3fcb7f4f4dc95720a1f36b26a17b
-  languageName: node
-  linkType: hard
-
-"baseline-browser-mapping@npm:^2.10.21":
-  version: 2.10.21
-  resolution: "baseline-browser-mapping@npm:2.10.21"
-  bin:
-    baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/065d90f98099dd0d7b6e1c284f7133d0eaebf571a7ee3e9e0740862dbd64cf040f4447404269bc8b1fd4015dead68c3a026e541a214050375df6bde20706ec8b
   languageName: node
   linkType: hard
 
@@ -3303,7 +3294,7 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^10.0.1"
     "@meonode/mui": "npm:^1.5.1"
-    "@meonode/ui": "npm:^1.4.6"
+    "@meonode/ui": "npm:^1.5.0"
     "@mui/icons-material": "npm:^9.0.0"
     "@mui/material": "npm:^9.0.0"
     "@mui/types": "npm:^9.0.0"
@@ -3316,7 +3307,6 @@ __metadata:
     "@types/tinycolor2": "npm:^1.4.6"
     "@vitejs/plugin-react": "npm:^6.0.1"
     babel-plugin-react-compiler: "npm:^1.0.0"
-    baseline-browser-mapping: "npm:^2.10.21"
     eslint: "npm:^10.2.1"
     eslint-plugin-prettier: "npm:^5.5.5"
     eslint-plugin-react-hooks: "npm:^7.1.1"

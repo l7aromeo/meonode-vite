@@ -1,10 +1,10 @@
-import themeSystem from '@src/constants/themes/themeSystem'
-import type { Theme } from '@meonode/ui'
+import baseThemeSystem from './baseThemeSystem'
+import type { MeoTheme } from '@meonode/ui'
 
-const lightTheme: Theme = {
+const lightTheme: MeoTheme = {
   mode: 'light',
   system: {
-    ...themeSystem,
+    ...baseThemeSystem,
     primary: {
       default: '#000000',
       content: '#ffffff',

@@ -12,7 +12,7 @@
   "dependencies": {
     "@emotion/styled": "^11.14.1",
     "@meonode/mui": "^1.5.1",
-    "@meonode/ui": "^1.4.6",
+    "@meonode/ui": "^1.5.0",
     "@mui/icons-material": "^9.0.0",
     "@mui/material": "^9.0.0",
     "@reduxjs/toolkit": "^2.11.2",
@@ -34,7 +34,6 @@
     "@types/tinycolor2": "^1.4.6",
     "@vitejs/plugin-react": "^6.0.1",
     "babel-plugin-react-compiler": "^1.0.0",
-    "baseline-browser-mapping": "^2.10.21",
     "eslint": "^10.2.1",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react-hooks": "^7.1.1",

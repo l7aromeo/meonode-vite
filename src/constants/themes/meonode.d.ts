@@ -71,6 +71,8 @@ export interface ThemeSystem {
   navbarHeight: string
 }
 
+import '@meonode/ui'
+
 declare module '@meonode/ui' {
   interface MeoTheme {
     mode: 'light' | 'dark'

@@ -12,8 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@meonode/mui": "^1.5.6",
-    "@meonode/ui": "^1.6.0",
+    "@meonode/mui": "^1.5.8",
+    "@meonode/ui": "^1.6.2",
     "@mui/icons-material": "^9.1.1",
     "@mui/material": "^9.1.2",
     "@reduxjs/toolkit": "^2.12.0",

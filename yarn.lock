@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 10
   cacheKey: 10c0
 
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.27.1":
@@ -975,38 +975,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meonode/compiler@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "@meonode/compiler@npm:0.6.0"
-  checksum: 10c0/b1a6e76e3d10eec76154e6f24b158697d4a1e1dc5eed74bef25580a3715ef389f814e4abdfc3da78edde2afba71dbb5852272a17d91b3a7278fb44abd465db85
+"@meonode/compiler@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@meonode/compiler@npm:0.5.0"
+  checksum: 10c0/8fbe56bfa98009e2beeb58c8f86f16c2b012119cd5783bbec509fb3e93c96feb7adf9cfe021fb686e44c8e7cf85c275aeadef3ac47c9cd0447b4573ab01cdb09
   languageName: node
   linkType: hard
 
-"@meonode/mui@npm:^1.5.9":
-  version: 1.5.9
-  resolution: "@meonode/mui@npm:1.5.9"
+"@meonode/mui@npm:^1.5.8":
+  version: 1.5.8
+  resolution: "@meonode/mui@npm:1.5.8"
   peerDependencies:
-    "@meonode/ui": ^1.8.1
-    "@mui/lab": ^9.0.0-beta.6
-    "@mui/material": ^9.2.0
+    "@meonode/ui": ^1.6.2
+    "@mui/lab": ^9.0.0-beta.5
+    "@mui/material": ^9.1.2
     "@mui/material-nextjs": ^9.1.1
-    "@mui/x-charts": 9.10.1
-    "@mui/x-charts-pro": ^9.10.1
-    "@mui/x-data-grid": ^9.10.1
-    "@mui/x-data-grid-premium": ^9.10.1
-    "@mui/x-data-grid-pro": ^9.10.1
-    "@mui/x-date-pickers": ^9.10.1
-    "@mui/x-date-pickers-pro": ^9.10.1
-    "@mui/x-tree-view": ^9.10.1
-    "@mui/x-tree-view-pro": ^9.10.1
-    react: ">=19.2.8"
-  checksum: 10c0/56f0a9db6023ed2371809b2da74c3d14014accc553ab2599d7372246fc6d819c3623abcca4f758e92fb48a00a3f14bbfdd26bf2b534125d31f7478bbb5b30c5b
+    "@mui/x-charts": 9.7.0
+    "@mui/x-charts-pro": ^9.7.0
+    "@mui/x-data-grid": ^9.7.0
+    "@mui/x-data-grid-premium": ^9.7.0
+    "@mui/x-data-grid-pro": ^9.7.0
+    "@mui/x-date-pickers": ^9.7.0
+    "@mui/x-date-pickers-pro": ^9.7.0
+    "@mui/x-tree-view": ^9.7.0
+    "@mui/x-tree-view-pro": ^9.7.0
+    react: ">=19.2.7"
+  checksum: 10c0/c99c6a3c16352cd4a13ff6f8baca7047b8895547a7f0d7be548fed3fb4f05c2a7f975a1c7ed760d9c32635ef9a5980849834cd57d79987640551d806b3e4c67a
   languageName: node
   linkType: hard
 
-"@meonode/ui@npm:^1.8.2":
-  version: 1.8.2
-  resolution: "@meonode/ui@npm:1.8.2"
+"@meonode/ui@npm:^1.7.4":
+  version: 1.7.4
+  resolution: "@meonode/ui@npm:1.7.4"
   dependencies:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/serialize": "npm:^1.3.3"
@@ -1016,7 +1016,7 @@ __metadata:
     "@emotion/react": ">=11.14.0"
     react: ">=19.2.0"
     react-dom: ">=19.2.0"
-  checksum: 10c0/1e0d7b9f7d6393b5e75a49328ea63250aa980887800f21b2d58762140e3466cdb4a75881614d37f9e807fe3903d2b2a470c33f1bbf751d80fe8c882d9e0bba4e
+  checksum: 10c0/1d1cc2091bb9d6a6b42a74c5e82b45e03acb300bc88c0467fba7e1e9becae09acccfd835d6f2b63c164bcfd703ffd0f55d5dc816c6bf95293407670039a4a020
   languageName: node
   linkType: hard
 
@@ -1595,10 +1595,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.17.25":
-  version: 4.17.25
-  resolution: "@types/lodash@npm:4.17.25"
-  checksum: 10c0/ca2049f16bf527e04d6e27702e3912a484faaff587de77a5c58e0d243b9292a655e1d7f7e5bdf2ffdf49a76da10673097f8dd4901990679058d47ccd99051877
+"@types/lodash@npm:^4.17.24":
+  version: 4.17.24
+  resolution: "@types/lodash@npm:4.17.24"
+  checksum: 10c0/b72f60d4daacdad1fa643edb3faba204c02a01eb1ac00a83ff73496a6d236fc55e459c06106e8ced42277dba932d087d8fc090f8de4ef590d3f91e6d6f7ce85a
   languageName: node
   linkType: hard
 
@@ -3299,15 +3299,15 @@ __metadata:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^10.0.1"
-    "@meonode/compiler": "npm:^0.6.0"
-    "@meonode/mui": "npm:^1.5.9"
-    "@meonode/ui": "npm:^1.8.2"
+    "@meonode/compiler": "npm:^0.5.0"
+    "@meonode/mui": "npm:^1.5.8"
+    "@meonode/ui": "npm:^1.7.4"
     "@mui/icons-material": "npm:^9.2.0"
     "@mui/material": "npm:^9.2.0"
     "@mui/types": "npm:^9.1.1"
     "@reduxjs/toolkit": "npm:^2.12.0"
     "@rolldown/plugin-babel": "npm:^0.2.3"
-    "@types/lodash": "npm:^4.17.25"
+    "@types/lodash": "npm:^4.17.24"
     "@types/node": "npm:^26.1.2"
     "@types/react": "npm:^19.2.18"
     "@types/react-dom": "npm:^19.2.4"
@@ -3840,7 +3840,7 @@ __metadata:
 
 "resolve@patch:resolve@npm%3A^1.19.0#optional!builtin<compat/resolve>":
   version: 1.22.12
-  resolution: "resolve@patch:resolve@npm%3A1.22.12#optional!builtin<compat/resolve>::version=1.22.12&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.12#optional!builtin<compat/resolve>::version=1.22.12&hash=9bd1a5"
   dependencies:
     es-errors: "npm:^1.3.0"
     is-core-module: "npm:^2.16.1"
@@ -3848,7 +3848,7 @@ __metadata:
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 10c0/fc6519984ae1f894d877c0060ba8b1f5ba3bc0e85a02f74e141929c118c23d74d9735619a9cc2965397387e514884245c65d72a40731dcb6cfc84c7bcdc8321e
+  checksum: 10c0/e12af106e16e652bd83060e8afacece4ee3dcbd0f4cf028e3d9ad178e6ced9ecb1c87ee60158b239582313902a717f8adc57a9b76ea54b1994141ba15f420c65
   languageName: node
   linkType: hard
 

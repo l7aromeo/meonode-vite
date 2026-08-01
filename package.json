@@ -12,8 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@meonode/mui": "^1.5.8",
-    "@meonode/ui": "^1.7.4",
+    "@meonode/mui": "1.5.10",
+    "@meonode/ui": "1.8.5",
     "@mui/icons-material": "^9.2.0",
     "@mui/material": "^9.2.0",
     "@reduxjs/toolkit": "^2.12.0",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@meonode/compiler": "^0.5.0",
+    "@meonode/compiler": "0.6.0",
     "@mui/types": "^9.1.1",
     "@rolldown/plugin-babel": "^0.2.3",
     "@types/lodash": "^4.17.24",

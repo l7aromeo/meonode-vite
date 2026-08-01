@@ -975,6 +975,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@meonode/compiler@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "@meonode/compiler@npm:0.6.0"
+  checksum: 10c0/b1a6e76e3d10eec76154e6f24b158697d4a1e1dc5eed74bef25580a3715ef389f814e4abdfc3da78edde2afba71dbb5852272a17d91b3a7278fb44abd465db85
+  languageName: node
+  linkType: hard
+
 "@meonode/mui@npm:^1.5.9":
   version: 1.5.9
   resolution: "@meonode/mui@npm:1.5.9"
@@ -3292,6 +3299,7 @@ __metadata:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^10.0.1"
+    "@meonode/compiler": "npm:^0.6.0"
     "@meonode/mui": "npm:^1.5.9"
     "@meonode/ui": "npm:^1.8.2"
     "@mui/icons-material": "npm:^9.2.0"

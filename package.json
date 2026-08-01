@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@meonode/compiler": "^0.6.0",
     "@mui/types": "^9.1.1",
     "@rolldown/plugin-babel": "^0.2.3",
     "@types/lodash": "^4.17.25",

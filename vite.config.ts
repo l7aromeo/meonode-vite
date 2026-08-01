@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import react, { reactCompilerPreset } from '@vitejs/plugin-react'
+import { reactCompilerPreset } from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import { visualizer } from 'rollup-plugin-visualizer'
 import * as path from 'node:path'
 import { dependencies } from './package.json'
@@ -27,7 +28,9 @@ function manualChunks(id: string) {
 export default defineConfig({
   mode: process.env.NODE_ENV,
   plugins: [
-    react(),
+    react({
+      plugins: [['@meonode/compiler', {}]],
+    }),
     babel({ presets: [reactCompilerPreset()] }),
     imagetools(),
     ViteImageOptimizer(),

@@ -29,7 +29,7 @@ export default defineConfig({
   mode: process.env.NODE_ENV,
   plugins: [
     react({
-      plugins: [['@meonode/compiler', {}]],
+      plugins: [['@meonode/compiler', { factoryModules: ['@meonode/mui'] }]],
     }),
     babel({ presets: [reactCompilerPreset()] }),
     imagetools(),

@@ -12,8 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@meonode/mui": "^2.0.0",
-    "@meonode/ui": "^2.0.1",
+    "@meonode/mui": "^3.0.0",
+    "@meonode/ui": "^3.0.0",
     "@mui/icons-material": "^9.3.1",
     "@mui/material": "^9.3.1",
     "@reduxjs/toolkit": "^2.12.0",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@meonode/compiler": "^0.7.1",
+    "@meonode/compiler": "^0.9.0",
     "@mui/types": "^9.3.0",
     "@rolldown/plugin-babel": "^0.2.3",
     "@types/lodash": "^4.17.25",
@@ -55,5 +55,8 @@
     "vite-imagetools": "^12.0.0",
     "vite-plugin-image-optimizer": "^2.0.3"
   },
-  "packageManager": "yarn@4.18.0"
+  "packageManager": "yarn@4.18.0",
+  "overrides": {
+    "@swc/core": "1.15.47"
+  }
 }

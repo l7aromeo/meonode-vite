@@ -1,11 +1,10 @@
 import { Node, Center, Column, Row, H1, H2, H3, Button, Text, A, Div, useTheme, usePortal, type PortalLayerProps } from '@meonode/ui'
 import { useEffect, useState, type Dispatch, type SetStateAction } from 'react'
-import darkTheme from '@src/constants/themes/darkTheme'
-import lightTheme from '@src/constants/themes/lightTheme'
 
 export default function HomePage() {
   const [activeFeature, setActiveFeature] = useState<number | null>(null)
-  const { setTheme } = useTheme()
+  // `mode` is read in the handler, never rendered into markup.
+  const { mode, setMode } = useTheme()
 
   return Center({
     minHeight: '100vh',
@@ -35,10 +34,7 @@ export default function HomePage() {
                 transform: 'translateY(-3px)',
               },
             },
-            onClick: () =>
-              setTheme(theme => {
-                return theme.mode === 'light' ? darkTheme : lightTheme
-              }),
+            onClick: () => setMode(mode === 'light' ? 'dark' : 'light'),
           }),
         }),
         // Hero Section

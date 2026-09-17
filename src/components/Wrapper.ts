@@ -1,26 +1,25 @@
-import { useMemo } from 'react'
 import { store } from '@src/redux/store'
-import { type Children, Node, type Theme, ThemeProvider, PortalProvider, PortalHost } from '@meonode/ui'
+import { type Children, Node, ThemeProvider, PortalProvider, PortalHost } from '@meonode/ui'
 import { Provider as ReduxProvider } from 'react-redux'
 import { SnackbarProvider } from 'notistack'
-import lightTheme from '@src/constants/themes/lightTheme.ts'
-import darkTheme from '@src/constants/themes/darkTheme.ts'
+import { themeConfig } from '@src/constants/themes/config.ts'
+import { themeTokens } from '@src/constants/themes/tokens.ts'
 
 interface WrappersProps {
   children: Children
 }
 
 export const Wrapper = ({ children }: WrappersProps) => {
-  const theme = useMemo<Theme>(() => {
-    // Initialize from localStorage
-    const stored = localStorage.getItem('theme')
-    return stored === 'dark' ? darkTheme : lightTheme
-  }, [])
-
   return Node(ReduxProvider, {
     store,
+    /*
+     * No `localStorage` read here. The provider owns the stored preference and
+     * stamps `data-theme` on `<html>`; reading it separately is a second source
+     * of truth that can disagree with the first.
+     */
     children: ThemeProvider({
-      theme,
+      ...themeConfig,
+      tokens: themeTokens,
       children: Node(SnackbarProvider, {
         children: PortalProvider({
           children: Array.isArray(children) ? [...children, PortalHost()] : [children, PortalHost()],

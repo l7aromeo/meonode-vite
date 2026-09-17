@@ -2,6 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!--
+      Applies the theme before the first paint.
+
+      `themeScript()` from @meonode/ui returns a node for a server-rendered
+      <head>, so it does not apply here: this file is a static shell and
+      everything React does happens after the first paint. Without this, a
+      reader who chose dark still sees the light shell until the bundle loads.
+
+      It must read the same storage key and write the same attribute the
+      provider does -- keep the names in step with
+      src/constants/themes/config.ts, because nothing can check that for you
+      across this boundary.
+
+      Placed before the stylesheet on purpose: a script that follows a
+      <link rel="stylesheet"> cannot run until that sheet has loaded.
+    -->
+    <script>
+      ;(function () {
+        try {
+          var c = { modes: ['light', 'dark'], default: 'light', preference: 'system', system: { light: 'light', dark: 'dark' } }
+          var p = c.preference
+          try {
+            var v = localStorage.getItem('theme')
+            if (typeof v === 'string' && v) p = v
+          } catch (e) {}
+          if (p !== 'system' && c.modes.indexOf(p) < 0) p = c.default
+          var t = p
+          if (p === 'system') {
+            t = c.system.light
+            try {
+              if (matchMedia('(prefers-color-scheme: dark)').matches) t = c.system.dark
+            } catch (e) {}
+          }
+          document.documentElement.setAttribute('data-theme', t)
+          document.documentElement.setAttribute('data-theme-preference', p)
+        } catch (e) {}
+      })()
+    </script>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>

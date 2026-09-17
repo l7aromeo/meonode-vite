@@ -1,3 +1,118 @@
+/*
+ * The palettes, keyed by the attribute the snippet in index.html writes on
+ * <html> before the first paint.
+ *
+ * Light sits on `:root` rather than under `[data-theme='light']`: every failure
+ * path in that snippet ends with no attribute written -- storage blocked,
+ * `matchMedia` throwing, a stored mode this app no longer declares -- and a
+ * reader who hits one should get a styled page, not an unstyled one.
+ */
+:root {
+  --primary: #000000;
+  --primary-content: #ffffff;
+  --primary-muted: #bdbdbd;
+  --primary-hover: #222222;
+  --secondary: #370900;
+  --secondary-content: #fed7a7;
+  --secondary-muted: #a67c6b;
+  --secondary-hover: #5a1400;
+  --accent: #8c3f27;
+  --accent-content: #fed7a7;
+  --accent-muted: #b97a5a;
+  --accent-hover: #a44a2e;
+  --neutral: #c93400;
+  --neutral-content: #fff7ed;
+  --neutral-muted: #e0a899;
+  --neutral-hover: #e04a1a;
+  --base: #fff7ed;
+  --base-medium: #feebd3;
+  --base-deep: #fed7a7;
+  --base-content: #7a3205;
+  --base-muted: #f5e1d3;
+  --base-hover: #ffe7c2;
+  --success: #2E7D32;
+  --success-content: #fef3c5;
+  --success-muted: #81c784;
+  --success-hover: #388e3c;
+  --warning: #F9A825;
+  --warning-content: #fffde7;
+  --warning-muted: #ffe082;
+  --warning-hover: #ffb300;
+  --error: #D32F2F;
+  --error-content: #ffebee;
+  --error-muted: #e57373;
+  --error-hover: #e53935;
+  --danger: #C62828;
+  --danger-content: #ffcdd2;
+  --danger-muted: #ef9a9a;
+  --danger-hover: #d32f2f;
+  --info: #0288D1;
+  --info-content: #e1f5fe;
+  --info-muted: #81d4fa;
+  --info-hover: #039be5;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --shadow-2xl: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] {
+  --primary: #db924b;
+  --primary-content: #110802;
+  --primary-muted: #b07a3a;
+  --primary-hover: #e6a55e;
+  --secondary: #3D2F24;
+  --secondary-content: #F0E5D5;
+  --secondary-muted: #2c2118;
+  --secondary-hover: #4e3b2e;
+  --accent: #4A3222;
+  --accent-content: #F0E5D5;
+  --accent-muted: #332113;
+  --accent-hover: #5c3e2a;
+  --neutral: #7D2E2E;
+  --neutral-content: #EEDCDC;
+  --neutral-muted: #5a2020;
+  --neutral-hover: #944040;
+  --base: #261c25;
+  --base-medium: #1d151c;
+  --base-deep: #120b11;
+  --base-content: #c5a061;
+  --base-muted: #191218;
+  --base-hover: #31202e;
+  --success: #1e5a21;
+  --success-content: #d4edda;
+  --success-muted: #17441a;
+  --success-hover: #28732c;
+  --warning: #b37400;
+  --warning-content: #ffe0b2;
+  --warning-muted: #7a5300;
+  --warning-hover: #d49a1a;
+  --error: #9b2222;
+  --error-content: #ffcdd2;
+  --error-muted: #6d1818;
+  --error-hover: #b93a3a;
+  --danger: #921f1f;
+  --danger-content: #ef9a9a;
+  --danger-muted: #651616;
+  --danger-hover: #b22d2d;
+  --info: #01579b;
+  --info-content: #b3e5fc;
+  --info-muted: #013a63;
+  --info-hover: #0277bd;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.4);
+  --shadow-2xl: 0 16px 32px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
 html, body {
     margin: 0;
     padding: 0;

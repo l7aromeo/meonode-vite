@@ -190,6 +190,7 @@ const FeaturesSection = ({ activeFeature, setActiveFeature }: { activeFeature: n
         gap: 'theme.spacing.lg',
         children: features.map((feature, index) =>
           Div({
+            key: feature.title,
             padding: 'theme.spacing.lg',
             borderRadius: '16px',
             border: `2px solid ${activeFeature === index ? 'theme.primary' : 'rgba(255,255,255,0.1)'}`,
@@ -478,6 +479,7 @@ const InteractiveModal = ({ data, close }: PortalLayerProps<{ count: number; set
             justifyContent: 'center',
             children: ['primary', 'secondary', 'accent'].map(t =>
               Button(t, {
+                key: t,
                 backgroundColor: theme === t ? `theme.${t}` : 'transparent',
                 color: theme === t ? `theme.${t}.content` : `theme.${t}`,
                 border: `2px solid theme.${t}`,

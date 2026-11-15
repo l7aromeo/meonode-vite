@@ -56,7 +56,7 @@
     "vite-imagetools": "^12.0.2",
     "vite-plugin-image-optimizer": "^2.0.3"
   },
-  "packageManager": "yarn@4.18.0",
+  "packageManager": "bun@1.4.4",
   "//": "@swc/core stays on 1.15.47 until @meonode/compiler loads under @swc/core 1.16 and later: https://github.com/l7aromeo/meonode/issues/50",
   "overrides": {
     "@swc/core": "1.15.47"

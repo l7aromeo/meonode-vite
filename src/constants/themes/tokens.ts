@@ -15,13 +15,27 @@ export const themeTokens = {
   secondary: { default: 'var(--secondary)', content: 'var(--secondary-content)', muted: 'var(--secondary-muted)', hover: 'var(--secondary-hover)' },
   accent: { default: 'var(--accent)', content: 'var(--accent-content)', muted: 'var(--accent-muted)', hover: 'var(--accent-hover)' },
   neutral: { default: 'var(--neutral)', content: 'var(--neutral-content)', muted: 'var(--neutral-muted)', hover: 'var(--neutral-hover)' },
-  base: { default: 'var(--base)', medium: 'var(--base-medium)', deep: 'var(--base-deep)', content: 'var(--base-content)', muted: 'var(--base-muted)', hover: 'var(--base-hover)' },
+  base: {
+    default: 'var(--base)',
+    medium: 'var(--base-medium)',
+    deep: 'var(--base-deep)',
+    content: 'var(--base-content)',
+    muted: 'var(--base-muted)',
+    hover: 'var(--base-hover)',
+  },
   success: { default: 'var(--success)', content: 'var(--success-content)', muted: 'var(--success-muted)', hover: 'var(--success-hover)' },
   warning: { default: 'var(--warning)', content: 'var(--warning-content)', muted: 'var(--warning-muted)', hover: 'var(--warning-hover)' },
   error: { default: 'var(--error)', content: 'var(--error-content)', muted: 'var(--error-muted)', hover: 'var(--error-hover)' },
   danger: { default: 'var(--danger)', content: 'var(--danger-content)', muted: 'var(--danger-muted)', hover: 'var(--danger-hover)' },
   info: { default: 'var(--info)', content: 'var(--info-content)', muted: 'var(--info-muted)', hover: 'var(--info-hover)' },
-  shadow: { default: 'var(--shadow)', sm: 'var(--shadow-sm)', md: 'var(--shadow-md)', lg: 'var(--shadow-lg)', xl: 'var(--shadow-xl)', '2xl': 'var(--shadow-2xl)' },
+  shadow: {
+    default: 'var(--shadow)',
+    sm: 'var(--shadow-sm)',
+    md: 'var(--shadow-md)',
+    lg: 'var(--shadow-lg)',
+    xl: 'var(--shadow-xl)',
+    '2xl': 'var(--shadow-2xl)',
+  },
 }
 
 export default themeTokens

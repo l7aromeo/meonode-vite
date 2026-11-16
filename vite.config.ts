@@ -3,7 +3,7 @@ import { reactCompilerPreset } from '@vitejs/plugin-react'
 import react from '@vitejs/plugin-react-swc'
 import { visualizer } from 'rollup-plugin-visualizer'
 import * as path from 'node:path'
-import { dependencies } from './package.json'
+import pkg from './package.json' with { type: 'json' }
 import { imagetools } from 'vite-imagetools'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import babel from '@rolldown/plugin-babel'
@@ -18,7 +18,7 @@ function renderChunks(deps: Record<string, string>) {
 }
 
 function manualChunks(id: string) {
-  const chunks = renderChunks(dependencies)
+  const chunks = renderChunks(pkg.dependencies)
   for (const [name, modules] of Object.entries(chunks)) {
     if (modules.some(m => id.includes(`/node_modules/${m}/`))) return name
   }
@@ -47,6 +47,6 @@ export default defineConfig({
     },
   },
   resolve: {
-    alias: [{ find: '@src', replacement: path.resolve(__dirname, 'src') }],
+    alias: [{ find: '@src', replacement: path.resolve(import.meta.dirname, 'src') }],
   },
 })
